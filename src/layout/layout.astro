@@ -1,0 +1,27 @@
+---
+import Header from "./Header.astro";
+import "../styles-css/styles.css";
+interface Props {
+  title: string;
+  contPage: string;
+}
+const { title, contPage } = Astro.props;
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={contPage} />
+
+    <title>Mundo belleza | {title}</title>
+  </head>
+  <body>
+    <main class="felx">
+      <Header />
+
+      <slot />
+    </main>
+  </body>
+</html>

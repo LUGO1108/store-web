@@ -1,0 +1,11 @@
+---
+interface Props {
+    imagen?:string
+    alt?:string
+    
+}
+const {imagen, alt} = Astro.props
+---
+<div class="items-center ">
+    <img class="w-20 m-auto" src={imagen} alt={alt}>
+</div>

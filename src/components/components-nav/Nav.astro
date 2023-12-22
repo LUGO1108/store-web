@@ -1,0 +1,32 @@
+---
+import Logo from "./Logo.astro";
+import ListaUl from "./listaUl.astro";
+import MenuHamburguesa from "./menuHamburguesa.astro";
+---
+
+<nav class=" h-40 flex w-[90%] mx-auto overflow-hidden max-w-screen-xl items-center justify-between">
+  <Logo />
+  <ListaUl />
+  <MenuHamburguesa/>
+</nav>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+      const boton = document.querySelector("#boton");
+      const menu = document.querySelector("#menu");
+      const iconoMenu = document.querySelector("#icono-menu");
+      const iconoCerrar = document.querySelector("#icono-cerrar");
+
+      if (boton && menu && iconoMenu && iconoCerrar) {
+          boton.addEventListener("click", () => {
+              console.log("me diste click");
+              menu.classList.toggle("hidden");
+
+              // Cambiar entre el icono de menú y el de cerrar
+              iconoMenu.classList.toggle("hidden");
+              iconoCerrar.classList.toggle("hidden");
+          });
+      } else {
+          console.error("Alguno de los elementos no fue encontrado.");
+      }
+  });
+</script>

@@ -1,0 +1,21 @@
+---
+import { Image } from "astro:assets";
+import imagenHeader from "../../images/fotoMeinp.jpg"
+---
+
+<div class="grid sm:grid-col md:grid-cols-2 gap-10 mt-4 max-w-7xl mx-auto ">
+  <div class="text-center p-5 ">
+    <h2 class="text-3xl font-Rubik font-bold text-slate-700 md:mt-16">
+      Mundo Belleza
+    </h2>
+    <p class=" font-Rubik p-5 mx-10 md:text-left">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, saepe
+      voluptatibus modi quos corporis vitae provident accusamus eos enim rerum
+      cupiditate. Sequi molestias quo, facilis ex repudiandae mollitia
+      dignissimos. Soluta!
+    </p>
+  </div>
+  <div class=" p-4 my-auto ">
+    <Image class="rounded-lg shadow-2xl"  src={imagenHeader} alt="tienda de comesticos"/>
+  </div >
+</div>

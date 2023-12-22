@@ -1,0 +1,23 @@
+---
+import WhatSsap from '../../icons/whatSsap.astro';
+import ContactoWats from '../botones/contactoWats.astro';
+interface Props {
+  title: string;
+  content: string;
+  imagen: string;
+  precio:string
+  alt:string
+}
+const { title, content, imagen, alt,precio } = Astro.props;
+---
+
+<div class="felx rounded-2xl m-6 p-10 text-center shadow-lg hover:scale-[1.1] hover:duration-500 ">
+  <img class="overflow-visible w-[250px] bg-white rounded-full py-10 m-auto hover:scale-[1.1] hover:duration-300 " src={imagen} alt={alt} />
+  <h2 class="uppercase text-orange-700 font-extrabold hover:scale-[1.2] hover:duration-300 text-xl font-Rubik py-4 mt-8">{title}</h2>
+  <p class="text-lg py-2">{content}</p>
+  <p class="text-xl font-bold">{precio}</p>
+  <ContactoWats href='/'>
+    <WhatSsap />
+    contactame 
+  </ContactoWats>
+</div>

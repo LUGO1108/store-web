@@ -1,0 +1,15 @@
+---
+import Barra from "./barra.astro";
+---
+
+<div
+  id="menu"
+  class="fixed hidden inset-0 bg-gradient-to-b from-white/70 to-black/70 transition duration-300  md:static md:translate-x-0 md:bg-none md:block md:px-10"
+>
+  <ul class="absolute font-Rubik inset-x-0 top-40 p-12 bg-white w-[90%] mx-auto rounded-md h-max text-center grid gap-6 shadow-2xl md:w-max md:bg-transparent md:p-0 md:grid-flow-col md:static">
+    <Barra href="/">INICIO</Barra>
+    <Barra href="/store">TIENDA</Barra>
+    <Barra href="/about">NOSOTROS</Barra>
+    <Barra href="/contacto">CONTACTO</Barra>
+  </ul>
+</div>
