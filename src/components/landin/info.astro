@@ -1,0 +1,38 @@
+---
+import Comunicacion from "../../icons/Comunicacion.astro";
+import Envios from "../../icons/Envios.astro";
+import Preferencias from "../../icons/Preferencias.astro";
+---
+
+<section
+  class="grid grid-cols-1 md:grid-cols-3 gap-8 md:h-[300px] py-10 text-center mx-10"
+>
+  <article class="flex flex-col items-center mx-5">
+    <figure class="bg-slate-700 p-2 rounded-full"><Preferencias /></figure>
+    <h2 class="font-Oswald text-lg text-orange-700 py-2">Compra facil</h2>
+    <p class="text-lg">
+      elige lo que maste guste te atenderemos de la mejor manera
+    </p>
+  </article>
+  <article class="flex flex-col items-center mx-5">
+    <figure class="bg-slate-700 p-2 rounded-full"><Envios /></figure>
+    <h2 class="font-Oswald text-xl text-orange-700 py-2">
+      Envios a todo el pais
+    </h2>
+    <p class="text-lg">
+      estes en bogota, neiva barranquilla tu pedido llega tenemos la
+      flexivilidad que elijas la trasnportadora que deces.
+    </p>
+  </article>
+
+  <article class="flex flex-col items-center mx-5">
+    <figure class="bg-slate-700 p-2 rounded-full"><Comunicacion /></figure>
+    <h2 class="font-Oswald text-xl text-orange-700 py-2">
+      Siempre estamos encontacto
+    </h2>
+    <p>
+      ya sea pendiente de tu pedido o repsondiendo tus requerimientos siempre
+      estaremosen contacto
+    </p>
+  </article>
+</section>

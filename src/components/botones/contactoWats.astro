@@ -4,7 +4,7 @@ interface Props{
 }
 const{href}= Astro.props
 ---
-<button class="bg-slate-100  rounded-full mt-4 hover:scale-[1.1] hover:duration-300">
-    <a class="flex gap-2 py-2 px-3 text-[#66E31A]  font-bold text-center items-center" href={href}><slot/></a>
+<button class="bg-slate-100  rounded-full mt-4 hover:scale-[1.1] hover:duration-300  ">
+    <a class="flex gap-2 py-2 px-3 text-[#66E31A] font-bold text-center items-center fill-current" href={href}><slot/></a>
 
 </button>

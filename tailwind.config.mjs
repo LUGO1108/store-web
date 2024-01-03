@@ -4,7 +4,8 @@ export default {
 	theme: {
 		extend: {
 			fontFamily:{
-				Rubik:[ 'Rubik', 'sans-serif']
+				Rubik:[ 'Rubik', 'sans-serif'],
+				Oswald:['Oswald', 'sans-serif']
 
 			}
 			
