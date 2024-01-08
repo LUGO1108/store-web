@@ -1,6 +1,33 @@
 ---
 import Layout from "../layout/layout.astro";
+import WhatSsap from "../icons/whatSsap.astro";
+import ContactoWats from "../components/botones/contactoWats.astro";
+import Productos from "../productos/productos.json";
 ---
 <Layout title="tienda" contPage="esta es nuestra tienda en lineas mejor echa">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl m-auto">
+
+        {Productos.map((producto) => (
+          <div class="producto-card text-center rounded-xl shadow-lg shadow-indigo-500/40 p-6" >
+            <figure class="bg-white w-[30gfff0px] rounded-full m-auto">
+              <img class="hover:scale-[1.2] hover:duration-300 object-cover" src={producto.img} alt={producto.titulo} />
+            </figure>
+            <h2 class="uppercase text-orange-700 font-extrabold text-xl font-Rubik py-4 mt-8">{producto.titulo}</h2>
+            <p class="text-lg py-2">{producto.descripcion}</p>
+      
+            {typeof producto.precio === 'string' ? (
+              <p class="text-xl font-bold">${parseFloat(producto.precio.replace('$', '')).toFixed(2)}</p>
+            ) : (
+              <p class="text-xl font-bold">Precio no válido</p>
+            )}
+      
+            <ContactoWats href="/">
+              <WhatSsap />
+              contactame
+            </ContactoWats>
+          </div>
+        ))}
+      
+      </div>
 
 </Layout>

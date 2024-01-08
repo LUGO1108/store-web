@@ -1,0 +1,39 @@
+[
+    {
+        "titulo":"secador super-loop",
+        "descripcion":"el mejor secador linea profecional",
+        "precio":"$150.000",
+        "img":"remington.png"
+
+    },
+    {
+        "titulo":"plancha remington",
+        "descripcion":"el mejor secador linea profecional",
+        "precio":"$150.000",
+        "img":"plancha.png"
+    },
+    {
+        "titulo":"secador",
+        "descripcion":"el mejor secador linea profecional",
+        "precio":"$150.000",
+        "img":"remington.png"
+    },
+    {
+        "titulo":"secador",
+        "descripcion":"el mejor secador linea profecional",
+        "precio":"$150.000",
+        "img":"remington.png"
+    },
+    {
+        "titulo":"secador",
+        "descripcion":"el mejor secador linea profecional",
+        "precio":"$150.000",
+        "img":"remington.png"
+    },
+    {
+        "titulo":"secador",
+        "descripcion":"el mejor secador linea profecional",
+        "precio":"$150.000",
+        "img":"remington.png"
+    }
+]
