@@ -1,16 +1,33 @@
 ---
-import { Image } from "astro:assets";
-import headerimagen from "../../images/fotoMeinp.jpg"
+import WhatSsap from "../../icons/whatSsap.astro";
+import ContactoWats from "../botones/contactoWats.astro";
 ---
 
-<section class="grid sm:grid-cols-1 md:grid-cols-2 gap-8 max-w-7xl mt-10 mx-auto items-center">
-    <div class="p-4">
-       <Image src={headerimagen} alt="foto de cosmeticos"/>
-
-    </div>
-    <div class="text-center p-4 mx-10">
+<section class="grid sm:grid-cols-1 md:grid-cols-3 gap-2  mt-10 mx-auto items-center">
+   
+    <article class="text-center p-4 mx-2 md:mx-5 shadow-lg shadow-indigo-500/40 ">
         <h2 class="text-center text-orange-800 uppercase font-Rubik font-semibold text-2xl p-2">que es mundo belleza</h2>
-        <p class="font-Rubik text-lg text-center md:text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quaerat expedita, numquam doloremque nisi voluptates explicabo placeat sunt vero laborum error illo hic, dolore iure quibusdam quod inventore? Sequi, natus corrupti consequuntur, ex aut quisquam aspernatur velit dolorem nobis adipisci excepturi tenetur minus. Vitae voluptates incidunt nam, voluptatum laboriosam laborum?</p>
-    </div>
+        <p class="font-Rubik text-lg text-center md:text-left">Somos líderes en la distribución mayorista y al detal de productos de belleza de alta calidad. En <strong>Mundo Belleza</strong>, nos enorgullece ofrecer asesoramiento personalizado para satisfacer todas tus necesidades. Trabajamos con una amplia variedad de marcas reconocidas tanto en el mercado semiprofesional como en el profesional.</p>
+    </article>
+
+    <article class="text-center p-4 md:p-4 md:mx-5 md:col-span-2 rounded-xl shadow-lg shadow-indigo-500/40">
+        <h3 class="text-center text-orange-800 uppercase font-Rubik font-semibold text-2xl p-2">¿Por qué elegirnos?</h3>
+        <ul class="font-Rubik text-lg text-center md:text-left">
+            <ol><strong>Asesoramiento Profesional:</strong> Nuestro equipo altamente capacitado está listo para ofrecerte asesoramiento personalizado que se adapte a tu negocio. Estamos comprometidos a ayudarte a alcanzar tus metas.</ol><br/>
+            <ol><strong>Variedad de Marcas:</strong> Manejamos un extenso catálogo de marcas reconocidas en el mercado, brindándote acceso a productos de calidad tanto para profesionales de la belleza como para entusiastas.</ol><br/>
+            <ol><strong>Oportunidades Únicas:</strong> No pierdas la oportunidad de colaborar con nosotros. Ofrecemos oportunidades únicas para que tu negocio prospere y se destaque en la industria de la belleza.</ol>
+        </ul>
+    </article>
+
+    <article class="flex flex-col mt-5 pb-5 md:col-span-3 mx-10 shadow-lg shadow-indigo-500/40">
+        <h3 class="text-center text-orange-800 uppercase font-Rubik font-semibold text-2xl p-2">¡Conéctate con Nosotros!</h3>
+        <p class="font-Rubik text-lg text-center ">Estamos aquí para responder a tus preguntas y ayudarte a encontrar las soluciones perfectas para tu negocio. ¡Contáctanos hoy mismo y descubre cómo podemos potenciar tu éxito en la industria de la belleza!</p>
+        <article class="text-center">
+
+            <ContactoWats href="/">
+                <WhatSsap/>contactanos
+            </ContactoWats>
+        </article>
+    </article>
 
 </section>

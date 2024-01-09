@@ -8,15 +8,15 @@
     },
     {
         "titulo":"plancha remington",
-        "descripcion":"el mejor secador linea profecional",
-        "precio":"$150.000",
+        "descripcion":"planchas con losmejoresmateriales",
+        "precio":"$250.000",
         "img":"plancha.png"
     },
     {
         "titulo":"secador",
         "descripcion":"el mejor secador linea profecional",
         "precio":"$150.000",
-        "img":"remington.png"
+        "img":"imagenes/balapng.png"
     },
     {
         "titulo":"secador",
