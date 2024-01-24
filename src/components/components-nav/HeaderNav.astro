@@ -1,25 +1,24 @@
 ---
 import { Image } from "astro:assets";
 import imagenHeader from "../../images/fotoMeinp.jpg"
-import ContactoWats from "../botones/contactoWats.astro";
-import WhatSsap from "../../icons/whatSsap.astro";
+
+
 ---
 
-<div class="grid sm:grid-col md:grid-cols-2 gap-10 mt-4 max-w-7xl mx-auto ">
+<div class="grid sm:grid-col md:grid-cols-2 mt-4 max-w-7xl mx-auto ">
   <div class="text-center p-5 ">
-    <h2 class="text-3xl font-Rubik font-bold text-slate-700 md:mt-16">
+    <h2 class="text-3xl font-Rubik text-royal-blue-800 font-bold  md:mt-16">
       Mundo Belleza tu socio de belleza profecional
     </h2>
-    <p class=" font-Rubik p-5 mx-10 md:text-left">
+    <p class=" font-Rubik p-5 mx-10 md:text-left text-royal-blue-950">
       Somos distribuidores mayoristas y al detal de marcas líderes en el mercado de belleza. Expertos en asesoramiento personalizado, ofrecemos una amplia gama de productos tanto para el mercado semiprofesional como profesional.
     </p>
-    <ContactoWats href="/" >
-    <WhatSsap/>
-    contactanos
-  </ContactoWats>
+ 
       
   </div>
   <div class=" p-4 my-auto ">
-    <Image class="rounded-lg shadow-2xl"  src={imagenHeader} alt="tienda de comesticos"/>
+    <Image class="rounded-lg shadow-2xl"  src={imagenHeader} alt="tienda de comesticos " />
   </div >
+
+  </div>
 </div>
